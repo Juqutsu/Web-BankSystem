@@ -17,16 +17,23 @@
 }
 
 .container .close {
-    width: 2vw;
-    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
     background-color: red;
     border: 2px solid rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .container .close:hover {
-
+    width: 35px;
+    height: 35px;
+    transition: 0.5s;
 }
 
 .main {
@@ -34,10 +41,61 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 3vh;
+    max-width: 300px;
+    padding: 1vh 2vw;
     background-color: white;
     border: 3px solid var(--db-color);
     border-radius: 12px;
+}
+
+.main img {
+    width: 8vh;
+}
+
+.main h1 {
+    font-size: 2.5vh;
+    margin-bottom: 20px;
+}
+
+.main .login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main .login input {
+    width: 12vw;
+    height: 3vh;
+    padding-left: 15px;
+    border: 2px solid var(--db-color);
+    border-radius: 5px;
+}
+
+.main .forgotpw  {
+    font-size: 1.3vh;
+    margin-left: auto;
+    margin-bottom: 8px;
+}
+
+.main .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main button {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 7px;
+    color: white;
+    border-radius: 5px;
+}
+
+.main .submit {
+    background-color: var(--button1-color);
+}
+
+.main .noacc {
+    background-color: var(--button2-color);
 }
 
 
