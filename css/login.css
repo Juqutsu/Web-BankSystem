@@ -1,0 +1,43 @@
+@import url('variables.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 1vh;
+    background-color: var(--bg-color)
+}
+
+.container .close {
+    width: 2vw;
+    height: 4vh;
+    background-color: red;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    color: white;
+}
+
+.container .close:hover {
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3vh;
+    background-color: white;
+    border: 3px solid var(--db-color);
+    border-radius: 12px;
+}
+
+

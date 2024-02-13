@@ -1,0 +1,18 @@
+@import url('variables.css');
+@import url("https://use.typekit.net/vpz4ntx.css");
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: "novecento-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100vw;
+    
+}
+
+.item{
+
+}
