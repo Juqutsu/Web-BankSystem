@@ -37,23 +37,20 @@ body, html {
     margin-block: 5vh;
 }
 
-
-
 .containerfooter{
+
     color: white;
     font-family: "novecento-sans", sans-serif;
     font-weight: 200;
     font-style: normal;
     background-color: var(--db-color);
-    padding: 2.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-
 .top{
-    height: 30vh;
+    min-height: 20vh;
     display: flex;
     flex-direction: row;
     background-color: var(--db-color);
@@ -98,13 +95,12 @@ hr{
 
 .image img{
     margin-left: 50px;
-    width: 150px;
+    width: 7vw;
 }
-
 
 button{
     padding-inline: 80px;
-    padding-block: 25px;
+    padding-block: 1.5vh;
     border: 1px solid transparent;
     border-radius: 10px;
     background-color: var(--bb-color);
@@ -112,6 +108,7 @@ button{
     font-family: "novecento-sans", sans-serif;
     font-weight: 200;
     font-size: 20px;
+    position: absolute;
 }
 
 input{
@@ -124,7 +121,7 @@ input{
     font-size: 20px;
     padding-inline-end: 100px;
     padding-inline-start: 30px;
-    padding-block: 25px;
+    padding-block: 1.5vh;
 }
 
 input:focus {
