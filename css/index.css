@@ -408,10 +408,9 @@ hr{
 }
 
 /* For screens wider than 1400px */
-/* For screens wider than 1400px */
 @media screen and (min-width: 1601px) {
 
-    body, html {
+    main {
         margin: 0 auto; /* Center content horizontally */
         max-width: 1600px; /* Limit content width */
     }
@@ -422,7 +421,7 @@ hr{
     }
 
     .ele2, .ele3, .ele4 {
-        width: 90%; /* Set width to a percentage */
+        width: 1400px; /* Set width to a percentage */
         margin: 0 auto; /* Center elements horizontally */
     }
 
