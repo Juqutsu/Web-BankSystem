@@ -275,6 +275,23 @@ hr{
     justify-content: space-between;
 }
 
+
+::-webkit-scrollbar {
+    width: 10px; /* Width of vertical scrollbar */
+    height: 10px; /* Height of horizontal scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Color of scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--db-color); /* Color of scrollbar handle */
+    border-radius: 5px; /* Rounded corners */
+}
+
 /* For screens smaller than 768px (e.g., smartphones) */
 @media screen and (max-width: 480px) {
     /* HEADER */
