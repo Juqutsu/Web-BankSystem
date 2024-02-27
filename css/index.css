@@ -389,3 +389,37 @@ hr{
 @media screen and (min-width: 481px) and (max-width: 768px) {
     /* CSS rules specific to medium-sized screens */
 }
+
+/* For screens wider than 1400px */
+/* For screens wider than 1400px */
+@media screen and (min-width: 1601px) {
+
+    body, html {
+        margin: 0 auto; /* Center content horizontally */
+        max-width: 1600px; /* Limit content width */
+    }
+    
+    .ele1 img {
+        max-width: 100%; /* Ensure image scales within its parent container */
+        width: auto; /* Override fixed width */
+    }
+
+    .ele2, .ele3, .ele4 {
+        width: 90%; /* Set width to a percentage */
+        margin: 0 auto; /* Center elements horizontally */
+    }
+
+    .box {
+        width: 100%; /* Set width to a percentage */
+        max-width: 100%; /* Ensure these elements can scale */
+        box-sizing: border-box; /* Include padding and border in the element's total width */
+    }
+
+    .head {
+        padding: 0 20px; /* Add padding to the header for better spacing */
+    }
+
+    .foot {
+        padding: 20px; /* Add padding to the footer for better spacing */
+    }
+}
