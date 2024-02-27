@@ -3,77 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeBank | Home</title>
+    <title>Le Bank | Home</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="head">
-            <iframe src="html/header.html" width="100%" height="100%" frameborder="0"></iframe>
+    <div class="head">
+        <div class="headlogo">
+            <img src="../images/logo1.png">
         </div>
-        <div class="slideshow-content">
-            <!-- The form -->
-
-            <div class="banner">
-                <img src="/images/banner1.png">
-            </div>
-            <div class="banner">
-                <img src="/images/banner2.png">
-            </div>
-            <div class="banner">
-                <p>CONTENT</p>
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="navigation">
+            <a href="../index.html" target="_parent">HOME</a>
+            <a href="beratung.html">BERATUNG</a>
+            <a href="kontakt.html">KONTAKT</a>
+            <a href="hilfe.html">HILFE</a>
         </div>
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        <div class="containerfooter">
-            <div class="top">
-                <div class="newsletter">
-                    <div class="image">
-                        <img src="../images/logo2.png">
-                    </div>
-                    <div class="newsletter_text">
-                        <p>Subscribe to our newsletter to get news <br> about new features or changes</p>
-                    </div>
-                    <div class="apply">
-                        <form>
-                            <input type="email" placeholder="Your email" autocomplete="off">
-                            <button>Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="lists">
-                    <div class="list">
-                        <a><h1>Website</h1></a>
-                        <a>Overview</a>
-                        <a>Features</a>
-                        <a>About</a>
-                        <a>Pricing</a>
-                    </div>
-                    <div class="list">
-                        <a><h1>Help</h1></a>
-                        <a>How can I change my password?</a>
-                        <a>Where can I withdrwa money?</a>
-                        <a>How does LeBank work abroad?</a>
-                        <a>Where can I contact Support?</a>
-                    </div>
-                </div>
-            </div>
-            <hr >
-            <div class="bottom">
-                <a>&#169; LeBank 2024</a>
-                <a>Impressum</a>
-            </div>
+        <div class="loginbutton">
+            <a href="login.html" target="_parent">Online Banking</a>
         </div>
     </div>
+    <div class="main">
+        <div class="ele1">
+            <img src="images/index_e1.png">
+            <div class="ele1_overlay">
+                <h1>Ihr neues Girokonto</h1>
+                <p>50€ Bonus</p>
+                <p>200+ Filialen weltweit</p>
+                <p>5% Jahreszins</p>
+            </div>
+            <div class="ele1_overlay2">
+                <h1>Neues Girokonto eröffnen</h1>
+            </div>
+        </div>
+        <div class="ele2">
+            <div class="box">
+                <img src="images/003-bitcoin-wallet.png">
+                <p>Depot</p>
+            </div>
+            <div class="box">
+                <img src="images/002-piggy-bank.png">
+                <p>Sparen</p>
+            </div>
+            <div class="box">
+                <img src="images/004-home.png">
+                <p>Immobilien</p>
+            </div>
+            <div class="box">
+                <img src="images/001-shield.png">
+                <p>Versicherung</p>
+            </div>
+            <div class="box">
+                <img src="images/005-geld-geben.png">
+                <p>Kredite</p>
+            </div>
+        </div>
+        <div class="ele3">
+            <h1>Marktinformationen</h1>
+            <div class="zahlen">
+                <div>
+                    <p>DAX 17.439,10 +0,11%</p>
+                    <p>MDAX 25.855,01 -0,56%</p>
+                    <p>TecDAX 3.408,05 +0,40%</p>
+                </div>
+                <div>
+                    <p>EUR/USD 1,0847 +0,27%</p>
+                    <p>Gold 2.027,9900 -0,38%</p>
+                    <p>Öl/Brent 83,890 -0,34%</p>
+                </div>
+            </div>
+        </div>
+        <div class="ele1">
+            <img src="images/index_e2.png">
+            <div class="ele1_overlay">
+                <h1>Immobilienfinanzierung</h1>
+                <p>Felxible Kreditpausen</p>
+                <p>Freie Anpassung</p>
+                <p>1% Jahreszins</p>
+            </div>
+            <div class="ele1_overlay2">
+                <h1>Mehr Erfahren</h1>
+            </div>
+        </div>
+        <div class="ele4">
+            <div class="ele4_left">
+                <img src="images/Phone.png">
+            </div>
+            <div class="ele4_right">
+                <h1>Jetzt durchstarten mit der Le Bank App</h1>
+                <p>Alles auf einen Blick</p>
+                <img src="images/phone_closeup.png">
+            </div>
+        </div>
 
-    <script src="js/index.js"></script>
-        
+    </div>
+    <div class="foot">
+        <div class="top">
+            <div class="newsletter">
+                <div class="image">
+                    <img src="../images/logo2.png">
+                </div>
+                <div class="newsletter_text">
+                    <p>Abonniere unseren Newsletter, um keine neuen <br> Features zu verpassen.</p>
+                </div>
+                <div class="apply">
+                    <form>
+                        <input type="email" placeholder="E-Mail Adresse" autocomplete="off">
+                        <button>Abonnieren</button>
+                    </form>
+                </div>
+            </div>
+            <div class="lists">
+                <div class="list">
+                    <a><h1>Website</h1></a>
+                    <a>Übersicht</a>
+                    <a>Features</a>
+                    <a>About</a>
+                    <a>Pricing</a>
+                </div>
+                <div class="list">
+                    <a><h1>Hilfe</h1></a>
+                    <a>Wie kann ich mein Passwort ändern?</a>
+                    <a>Wo kann ich Geld abheben?</a>
+                    <a>Wie funktioniert Le Bank im Ausland?</a>
+                    <a>Wo kann ich den Support kontaktieren?</a>
+                </div>
+            </div>
+        </div>
+        <hr >
+        <div class="bottom">
+            <a>&#169; LeBank 2024</a>
+            <a>Impressum</a>
+        </div>
+    </div>
+    
 </body>
 </html>

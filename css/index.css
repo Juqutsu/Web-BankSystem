@@ -1,117 +1,221 @@
 @import url('variables.css');
 @import url("https://use.typekit.net/vpz4ntx.css");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-body, html {
+body, html{
+    font-family: "Manrope", sans-serif;
     margin: 0;
     padding: 0;
-    height: 100%;
-    background-color: var(--bg-color);
+    width: 100vw;
+    overflow-x: hidden;
 }
 
-.container {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+a{
+    text-decoration: none;
+    color: var(--db-color)
+}
+
+li {
+    list-style: none;
+}
+
+/*HEADER*/
+.head{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    text-align: center;
-    font-family: "novecento-sans", sans-serif;
-    font-weight: 200;
-}
-
-.slideshow-content {
     align-items: center;
-    gap: 5vh;
+    color: var(--db-color);
+    font-size: 24px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.banner img{
-    width: 95vw;
-    border: 9px solid var(--db-color);
-    border-radius: 20px;
+.headlogo img{
+    padding: 10px;
+    height: 80px;
 }
 
-.banner{
-    display: none;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-
-  /* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-  /* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-
-.containerfooter{
-    color: white;
-    font-family: "novecento-sans", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    background-color: var(--db-color);
+.navigation{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 80px;
+}
+
+.loginbutton a{
+    color: white;
+    background-color: var(--db-color);
+    padding: 17px;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.loginbutton{
+    display: flex;
     justify-content: center;
 }
 
-.top{
-    min-height: 20vh;
+/*MAIN*/
+.main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 42px;
+    gap: 42px;
+}
+
+.ele1 {
+    position: relative; /* Set parent container to relative positioning */
+  }
+ 
+.ele1 img {
+    width: 90vw;
+    filter: brightness(30%);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+}
+  
+ 
+  .ele1_overlay {
+    position: absolute;
+    top: 10%; /* Adjust this percentage value to position the div vertically */
+    left: 15%; /* Adjust this percentage value to position the div horizontally */
+    padding: 15px;
+  }
+  
+  .ele1_overlay2 {
+    position: absolute;
+    top: 35%; /* Adjust this percentage value to position the div vertically */
+    right: 15%; /* Adjust this percentage value to position the div horizontally */
+    padding: 15px;
+  }
+  
+.ele1_overlay p {
+    background-color: var(--db-color);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+.ele1_overlay h1{
+    background-color: var(--db-color);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+.ele1_overlay2 h1{
+    background-color: white;
+    padding: 5px;
+    color: var(--db-color);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.ele2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 35px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    font-size: 25px;
+}
+
+.box img{
+    width: 100px;
+}
+
+.ele3{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+.zahlen{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ele4{
+    width: 90vw;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ele4_left img{
+    padding: 10px;
+}
+
+.ele4_right{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.ele4_right img{
+    width: 400px;
+}
+
+/*FOOTER*/
+.foot{
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
     background-color: var(--db-color);
 }
 
-.bottom{
-    background-color: var(--db-color);
-    margin-inline: 1vw;
-    margin-top: 1vh;
+.top{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    padding-inline: 30px;
+    padding-block: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: var(--bb-color);
+    color: white;
+    font-family: "Manrope", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    position: absolute;
+    margin-left: -100px;
+}
+
+input{
+    color: var(--font_50);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);;
+    font-family: "Manrope", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    padding-inline-end: 100px;
+    padding-inline-start: 30px;
+    padding-block: 10px;
+}
+
+input:focus {
+    outline: none;
 }
 
 hr{
@@ -133,6 +237,7 @@ hr{
 .newsletter_text, .apply{
     margin-left: 50px;
     font-size: 20px;
+    color: var(--font_50);
 }
 
 .lists{
@@ -147,40 +252,140 @@ hr{
     width: 7vw;
 }
 
-button{
-    padding-inline: 80px;
-    padding-block: 1.5vh;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    background-color: var(--bb-color);
-    color: white;
-    font-family: "novecento-sans", sans-serif;
-    font-weight: 200;
-    font-size: 20px;
-    position: absolute;
-}
-
-input{
-    color: var(--font_50);
-    border: 1px solid transparent;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);;
-    font-family: "novecento-sans", sans-serif;
-    font-weight: 200;
-    font-size: 20px;
-    padding-inline-end: 100px;
-    padding-inline-start: 30px;
-    padding-block: 1.5vh;
-}
-
-input:focus {
-    outline: none;
-}
-
 .list{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     gap: 2vh;    
+}
+
+.list a, .bottom a {
+    color: white;
+}
+
+.bottom{
+    background-color: var(--db-color);
+    margin-inline: 1vw;
+    margin-top: 1vh;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* For screens smaller than 768px (e.g., smartphones) */
+@media screen and (max-width: 480px) {
+    /* HEADER */
+    .head{
+        font-size: 15px;
+        justify-content: space-evenly;
+        height: 60px;
+    }
+    .loginbutton a{
+        font-size: 10px;
+        margin: 5px;
+        margin-left: 10px;
+        padding: 5px;
+    }
+    .navigation{
+        gap: 10px;
+    }
+    .headlogo img{
+        width: 60px;
+        height: auto;
+    }
+    /* MAIN */
+    /* ELEMENT 1 */
+    .ele1_overlay p{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .ele1_overlay h1{
+        font-size: 15px;
+    }
+
+    .ele1_overlay2 h1{
+        font-size: 15px;
+    }
+    .ele1 img{
+        width: 300px;
+    }
+    .ele1_overlay, .ele1_overlay2{
+        position: static;
+    }
+    .ele1_overlay2 h1{
+        border: 1px solid var(--db-color);
+    }
+    .ele1 img{
+        display: none;
+    }
+    .ele1{
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    /* ELEMENT 2 */
+
+    .ele2 img{
+        width: 70px;
+    }
+    .box{
+        width: 150px;
+        height: 150px;
+        font-size: 19px;
+    }
+    .ele2{
+        flex-direction: column;
+    }
+    /* ELEMENT 3 */
+    .ele3 p, .ele3 h1{
+        font-size: 15px;
+        margin-inline: 10px;
+    }
+
+    /* ELEMENT 4 */
+    .ele4_left{
+        display: none;
+    }
+    .ele4_right, .ele4_right h1{
+        font-size: 15px;
+    }
+    .ele4_right img{
+        width: 200px;
+    }
+
+    /* FOOTER */
+    a, p, input, button, h1 {
+        font-size: 10px;
+    }
+
+    .foot img{
+        width: 50px;
+    }
+    input{
+        padding-inline-end: 10px;
+        padding-inline-start: 10px;
+        padding-block: 10px;
+    }
+    button{
+        padding: 10px;
+        margin-left: -50px;
+    }
+    .lists{
+        display: none;
+    }
+    .top{
+        justify-content: center;
+        text-align: center;
+    }
+    .newsletter{
+        width: 90vw;
+        margin-top: 10px;
+    }
+}
+
+/* For screens between 768px and 1024px (e.g., tablets) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* CSS rules specific to medium-sized screens */
 }
