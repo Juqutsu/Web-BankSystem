@@ -15,10 +15,6 @@ a{
     color: var(--db-color)
 }
 
-li {
-    list-style: none;
-}
-
 /*HEADER*/
 .head{
     display: flex;
@@ -64,26 +60,28 @@ li {
     gap: 42px;
 }
 
+/*ELEMENT 1*/
+
 .ele1 {
-    position: relative; /* Set parent container to relative positioning */
+    position: relative; /* ele1 ist der Parent-Container von Element 1, hier wird festgelegt, dass die child container sich mit ihrer Größe an diesem orientieren */
   }
  
-.ele1 img {
+.ele1 img { /*Festlegung der Größe des Bildes von Element 1*/
     width: 90vw;
     filter: brightness(30%);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
 }
   
  
-  .ele1_overlay {
-    position: absolute;
+  .ele1_overlay { /*Text auf der linken Seite*/
+    position: absolute; /* Der Text von Element 1 ist so auf dem Bild*/
     top: 10%; /* Adjust this percentage value to position the div vertically */
     left: 15%; /* Adjust this percentage value to position the div horizontally */
     padding: 15px;
   }
   
-  .ele1_overlay2 {
-    position: absolute;
+  .ele1_overlay2 { /*Knopf auf der rechten Seite*/
+    position: absolute; 
     top: 35%; /* Adjust this percentage value to position the div vertically */
     right: 15%; /* Adjust this percentage value to position the div horizontally */
     padding: 15px;
@@ -114,6 +112,8 @@ li {
     font-size: 25px;
 }
 
+/*ELEMENT 2*/
+
 .ele2{
     display: flex;
     justify-content: space-evenly;
@@ -136,16 +136,33 @@ li {
     width: 100px;
 }
 
+/*ELEMENT 3*/
+
 .ele3{
     width: 90vw;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    padding-inline: 30px;
 }
-.zahlen{
+
+.container3{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
+
+.list3{
+    display: flex;
+    flex-direction: column;
+}
+
+.vl{
+    border-left: 1px solid var(--db-color);
+    height: 150px;
+}
+
+/*ELEMENT 4*/
 
 .ele4{
     width: 90vw;
