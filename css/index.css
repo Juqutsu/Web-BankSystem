@@ -108,6 +108,7 @@ a{
 
 .ele1_overlay2 h1{
     transition: 0.3s ease-in-out;
+    color: var(--db-color);
 }
 
 .ele1_overlay2 h1:hover{
@@ -172,7 +173,12 @@ a{
 /*ELEMENT 3*/
 
 .ele3 h1{
+    color: var(--db-color);
     padding-inline: 30px;
+}
+
+.ele3 p{
+    color: var(--db-color);
 }
 
 .ele3{
