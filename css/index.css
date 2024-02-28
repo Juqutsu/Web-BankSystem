@@ -132,10 +132,6 @@ a{
     font-size: 25px;
 }
 
-.box p{
-    margin-top: 20px;
-}
-
 .box img{
     width: 100px;
 }
@@ -451,8 +447,6 @@ button:hover{
     }
 
     .box {
-        width: 100%; /* Set width to a percentage */
-        max-width: 100%; /* Ensure these elements can scale */
         box-sizing: border-box; /* Include padding and border in the element's total width */
     }
 
