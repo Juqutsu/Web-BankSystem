@@ -132,6 +132,10 @@ a{
     font-size: 25px;
 }
 
+.box p{
+    margin-top: 20px;
+}
+
 .box img{
     width: 100px;
 }
@@ -290,6 +294,10 @@ hr{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 
