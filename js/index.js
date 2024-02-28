@@ -9,7 +9,7 @@ elementsWithPercentage.forEach(function(element) {
     // Check if the value is positive or negative
     if (value > 0) {
         // Set the color of the element to green
-        element.style.color = '#49f200';
+        element.style.color = '#2c9100';
     } else if (value < 0) {
         // Set the color of the element to red
         element.style.color = 'red';
