@@ -48,7 +48,7 @@ a{
     left: 0;
     width: 0;
     height: 2px; /* Height of the underline */
-    background-color: #000; /* Color of the underline */
+    background-color: var(--db-color); /* Color of the underline */
     transition: width 0.3s ease; /* Transition for width */
 }
 
