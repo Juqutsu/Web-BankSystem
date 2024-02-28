@@ -37,6 +37,25 @@ a{
     gap: 80px;
 }
 
+.navigation a{
+    position: relative;
+}
+
+.navigation a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Height of the underline */
+    background-color: #000; /* Color of the underline */
+    transition: width 0.3s ease; /* Transition for width */
+}
+
+.navigation a:hover::before {
+    width: 100%; /* Full width on hover */
+}
+
 .loginbutton a{
     color: white;
     background-color: var(--db-color);
@@ -86,6 +105,14 @@ a{
     right: 15%; /* Adjust this percentage value to position the div horizontally */
     padding: 15px;
   }
+
+.ele1_overlay2 h1{
+    transition: 0.3s ease-in-out;
+}
+
+.ele1_overlay2 h1:hover{
+    transform: scale(1.05);
+}
   
 .ele1_overlay p {
     background-color: var(--db-color);
@@ -101,7 +128,7 @@ a{
     color: white;
     border-radius: 5px;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
 }
 .ele1_overlay2 h1{
     background-color: white;
@@ -109,7 +136,7 @@ a{
     color: var(--db-color);
     border-radius: 5px;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 /*ELEMENT 2*/
@@ -130,7 +157,13 @@ a{
     width: 200px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
     font-size: 25px;
+    transition: 0.5s ease-in-out;
 }
+
+.box:hover {
+    transform: scale(1.1); /* Increase scale on hover */
+    box-shadow: 0px 0px 8px rgba(1, 1, 0, 0.4);
+  }
 
 .box img{
     width: 100px;
@@ -219,6 +252,7 @@ button{
     font-size: 20px;
     position: absolute;
     margin-left: -100px;
+    transition: 0.3s ease-in-out;
 }
 
 input{
@@ -273,7 +307,6 @@ hr{
 }
 
 .list{
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -282,7 +315,18 @@ hr{
 }
 
 .list a, .bottom a {
+    cursor: default;
+    position: relative;
     color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.list a[href], .bottom a[href]{
+    cursor: pointer;
+}
+
+.list a[href]:hover, .bottom a[href]:hover {
+    text-decoration: underline;
 }
 
 .bottom{
@@ -297,6 +341,7 @@ hr{
 
 button:hover{
     cursor: pointer;
+    filter: brightness(1.2); 
 }
 
 
