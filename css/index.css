@@ -2,6 +2,10 @@
 @import url("https://use.typekit.net/vpz4ntx.css");
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+*{
+    color: var(--db-color);
+}
+
 body, html{
     font-family: "Manrope", sans-serif;
     margin: 0;
@@ -241,11 +245,6 @@ a{
     justify-content: space-between;
 }
 
-.newsletter{
-    display: flex;
-    flex-direction: column;
-}
-
 button{
     padding-inline: 30px;
     padding-block: 10px;
@@ -288,6 +287,8 @@ hr{
 }
 
 .newsletter{
+    display: flex;
+    flex-direction: column;
     text-align: left;
     margin-top: 50px;
     color: var(--font_50);
@@ -297,6 +298,9 @@ hr{
 .newsletter_text, .apply{
     margin-left: 50px;
     font-size: 20px;
+}
+
+.newsletter_text p{
     color: var(--font_50);
 }
 
@@ -320,7 +324,7 @@ hr{
     gap: 2vh;    
 }
 
-.list a, .bottom a {
+.list a, .bottom a, .list h1 {
     cursor: default;
     position: relative;
     color: white;

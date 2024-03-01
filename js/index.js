@@ -48,17 +48,6 @@ function updateElements() {
     });
 }
 
-//STOCK MARKET SIMULATION
-
-// function newStocks(given){
-//     let randomChange = random();
-//     console.log(randomChange)
-//     // Calculate the new value by adding the random number to the current value
-//     let newValue = (Math.round((randomChange * given) * 100) / 100);
-
-//     return newValue;
-// }
-
 function random() {
     // Generate a random number between 0 and 1
     let randomNum = Math.random();
@@ -69,9 +58,6 @@ function random() {
     console.log("RANDOM: " + randomNum);
     return randomNum;
 }
-
-
-
 
 // Run the function initially
 updateElements();
