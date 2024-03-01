@@ -26,7 +26,7 @@ a{
     align-items: center;
     color: var(--db-color);
     font-size: 24px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
 }
 
 .headlogo img{
