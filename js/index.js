@@ -20,12 +20,7 @@ function updateElements() {
 
         let result = Math.round(oldworth+newworth*100)/100
 
-        
-        console.log("OldWorth: "+oldworth)
-        console.log("NewWorth:" +newworth)
-
         let newValue = Math.round((((newworth/oldworth)-1)*100)*100)/100
-        console.log(newValue)
 
 
         // Determine color based on the sign of newValue
@@ -40,7 +35,6 @@ function updateElements() {
             element.style.color = 'black';
         }
 
-
         // Update worth element
         worthelements[index].textContent = result;
         // Set the text content
@@ -51,11 +45,8 @@ function updateElements() {
 function random() {
     // Generate a random number between 0 and 1
     let randomNum = Math.random();
-    
     // Scale and shift the random number to be between 0.975 and 1.03
     randomNum = (randomNum * 0.055) + 0.975;
-    
-    console.log("RANDOM: " + randomNum);
     return randomNum;
 }
 
@@ -64,3 +55,19 @@ updateElements();
 
 // Run the function every 10 seconds
 setInterval(updateElements, 10000); // 10000 milliseconds = 10 seconds
+
+function openmenu(){
+    var menubutton = document.getElementById('menu1');
+    var menu = document.getElementById('menu');
+    menubutton.style.visibility = 'hidden';
+    menu.style.display = 'flex';
+    console.log("Menu open");
+}
+
+function closemenu(){
+    var menubutton = document.getElementById('menu1');
+    var menu = document.getElementById('menu');
+    menubutton.style.visibility = 'visible';
+    menu.style.display = 'none';
+    console.log("Menu closed");
+}
