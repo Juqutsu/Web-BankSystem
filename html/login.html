@@ -8,29 +8,42 @@
 </head>
 <body>
     <div class="container">
-        <a id="close" class="close" href="../index.html">X</a>
-        <div class="main">
-            <img src="../images/logo1.png" alt="Logo">
-            <h1 class="heading login">Login</h1>
-    
-            <div class="login">
-                <input type="text" class="username" id="username" placeholder="Username..">
-                <input type="password" class="password" id="password" placeholder="Password..">
+        <div class="head">
+            <div class="headlogo">
+                <img src="../images/logo1.png">
             </div>
-    
-            <a href="#forgotpw" class="forgotpw">Forgot Password?</a>
-    
-            <div class="div buttons">
-                <button class="submit" id="submit">
-                    Login
-                </button>
-        
-                <button class="noacc" id="noacc">
-                    No Account?
-                </button>
+            <div class="navigation">
+                <a href="../index.html">HOME</a>
+                <a href="../html/beratung.html">BERATUNG</a>
+                <a href="../html/kontakt.html">KONTAKT</a>
+                <a href="../html/hilfe.html">HILFE</a>
             </div>
-
-            
+            <div class="loginbutton">
+                <a href="../html/login.html">Online Banking</a>
+            </div>
+            <div class="menu1">
+                <a id="menu1" onclick="openmenu()" style="align-self: flex-end;"><img src="../images/menuleiste.png"> </a>
+            </div>
+            <div class="mobile_menu" id="menu"> 
+                <a style="align-self: flex-end;" onclick="closemenu()"><img src="../images/menuleiste.png"> </a>
+                <a href="../index.html">HOME</a>
+                <a href="../html/beratung.html">BERATUNG</a>
+                <a href="../html/kontakt.html">KONTAKT</a>
+                <a href="../html/hilfe.html">HILFE</a>
+                <a href="../html/login.html" id="login">Online Banking</a>
+            </div>
+        </div>
+        <div class="login-container">
+            <p>Online-Banking Login</p>
+            <div class="login-form">
+                <form>
+                    <div class="inputs">
+                        <input placeholder="Benutzername">
+                        <input type="password" placeholder="Passwort">
+                    </div>
+                    <button type="submit">Anmelden</button>
+                </form>
+            </div>
         </div>
     </div>
 </body>
